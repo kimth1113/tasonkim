@@ -12,47 +12,91 @@ import MagneticButton from "@/components/animations/MagneticButton";
 import PageTransition from "@/components/animations/PageTransition";
 
 const techStack = {
-  Frontend: ["React", "Next.js", "React Native", "Electron", "Tailwind CSS"],
-  Backend: ["Node.js", "ASP.NET", "Django", "Flask"],
-  "AI / ML": ["TensorFlow", "OpenAI API", "Claude API", "CNN"],
-  Infra: ["AWS", "Azure", "Docker"],
-  Database: ["MSSQL", "PostgreSQL", "SQLite"],
-  Languages: ["TypeScript", "Python", "C#"],
+  "Frontend": [
+    "React",
+    "Next.js",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "Mobile": [
+    "Swift",
+    "React Native",
+    "Expo"
+  ],
+  "Backend": [
+    "Python",
+    "Django",
+    "Node.js",
+    "ASP.NET"
+  ],
+  "Data": [
+    "SQLite",
+    "SQL"
+  ],
+  "Tools": [
+    "Git",
+    "ChatGPT",
+    "Codex"
+  ]
 };
 
 const experiences = [
   {
-    year: "2026",
-    title: "LIFELOG",
-    role: "풀스택 개발",
-    description:
-      "EST 주관 AI 프로젝트 우수작. 촬영 순간의 날짜, 위치, 날씨, 감정을 함께 기록하고, GPT-4 Vision이 맥락 기반 문구와 해시태그를 생성하는 키오스크형 포토부스 서비스.",
-    href: "/project/lifelog",
+    "year": "2026.07–",
+    "title": "BGNT IT 요청·이슈 통합 관리 시스템",
+    "role": "사내 업무 시스템 기획·개발·운영",
+    "description": "요청 접수, 원본·완료 증빙 연결, 이슈 추적과 한영 보고서를 통합한 웹 시스템. Vanilla JavaScript·Python·SQLite 기반으로 구현하고 현업 피드백으로 개선했습니다.",
+    "href": "https://github.com/kimth1113/portfolio/blob/main/projects/bgnt.md"
   },
   {
-    year: "2026",
-    title: "내폰네컷",
-    role: "풀스택 개발",
-    description:
-      "AI로 배경을 제거하고 감성 문구를 생성하는 모바일 포토부스 앱. BiRefNet 기반 정교한 배경 제거, Claude API 문구 생성, 11개 언어 지원.",
-    href: "/project/myphone4cuts",
+    "year": "2026",
+    "title": "개인 앱 개발·운영",
+    "role": "모바일 · Apps in Toss",
+    "description": "내폰네컷, AI 증명사진, 메아리AI, 치매타파, AI야 이게 뭐게를 개발·운영하고 책 읽어주는 AI 출시를 준비하고 있습니다. 화면·API·광고·결제 흐름을 구현했습니다.",
+    "href": "https://github.com/kimth1113/portfolio/blob/main/projects/apps.md"
   },
   {
-    year: "2024",
-    title: "RehobotRVM",
-    role: "풀스택 개발",
-    description:
-      "AI 기반 전자폐기물 자동 분류 키오스크 시스템. CNN 모델로 15종 전선 분류 정확도 90% 달성, 27인치 터치 키오스크 UI, 하드웨어 센서 연동.",
-    href: "/project/rehobot",
+    "year": "2026.03–05",
+    "title": "이스트소프트 제주",
+    "role": "KDT팀 프런트엔드 개발 파트",
+    "description": "교육·운영 업무를 지원하는 프런트엔드 개발 업무를 수행했습니다.",
+    "href": "https://github.com/kimth1113/portfolio/blob/main/projects/experience.md"
   },
   {
-    year: "2021",
-    title: "DearInBody",
-    role: "풀스택 개발",
-    description:
-      "InBody 장비 사양 관리를 오프라인에서 온라인으로 전환한 B2B 내부 시스템. React + .NET 5.0 + MSSQL, Azure AD 통합 인증, 처리 시간 2~3일 → 즉시로 단축.",
-    href: "/project/dearinbody",
+    "year": "2023.10–2024.10",
+    "title": "르호봇알브이엠",
+    "role": "AI 폐전선 수거 자판기 웹 개발",
+    "description": "React·ASP.NET 웹 시스템 개발·유지보수에 참여했습니다. AI 추론 결과 API 연동과 학습 데이터 전처리를 수행했습니다.",
+    "href": "/project/rehobot"
   },
+  {
+    "year": "2022.02–2023.02",
+    "title": "인바디 BWA ON",
+    "role": "iOS 개발 · 프리랜서 계약",
+    "description": "Swift 중심으로 측정 결과·그래프, Bluetooth 기기 연동, 로그인·회원정보, API 연동과 오류 수정을 담당했습니다.",
+    "href": "/project/bwa-on"
+  },
+  {
+    "year": "2021.11–2022.02",
+    "title": "인바디 ERP",
+    "role": "본사 ERP 개발",
+    "description": "업무용 웹 시스템 개발에 참여했습니다. BWA ON iOS 앱과 별도 서비스입니다.",
+    "href": "/project/dearinbody"
+  },
+  {
+    "year": "2020.01–12",
+    "title": "현대자동차 인도법인",
+    "role": "구매 IT 시스템 개발 인턴",
+    "description": "Python 기반 구매·품질 통합 추적 웹 애플리케이션과 부품별 불량률 추적·평가 시스템 개발에 참여했습니다.",
+    "href": "https://github.com/kimth1113/portfolio/blob/main/projects/experience.md"
+  },
+  {
+    "year": "교육 프로젝트",
+    "title": "LIFELOG",
+    "role": "AI 포토부스 개발",
+    "description": "촬영 맥락을 사진과 문구로 남기는 웹 프로젝트. 사진 선택·촬영·문구 생성·결과 확인 흐름을 구현했습니다.",
+    "href": "/project/lifelog"
+  }
 ];
 
 export default function Home() {
@@ -88,12 +132,12 @@ export default function Home() {
               <div className="flex-1">
                 <RevealOnScroll>
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg">
+                    <div className="w-12 h-12 rounded-full bg-[#103466] flex items-center justify-center text-white font-bold text-lg">
                       T
                     </div>
                     <div>
                       <h1 className="text-lg font-semibold">김태현 (TaeHyun Kim)</h1>
-                      <p className="text-sm text-[var(--muted)]">풀스택 개발자</p>
+                      <p className="text-sm text-[var(--muted)]">웹·모바일 개발자</p>
                     </div>
                   </div>
                 </RevealOnScroll>
@@ -111,8 +155,8 @@ export default function Home() {
                 </RevealOnScroll>
                 <RevealOnScroll delay={0.2}>
                   <p className="text-[var(--muted)] text-lg leading-relaxed max-w-xl mb-8">
-                    UI/UX 설계부터 백엔드/API, 인프라까지 End-to-End로 구현하며,
-                    실제 운영 환경에서 유지보수·성능·데이터 품질 개선 경험을 보유한 풀스택 개발자입니다.
+                    업무용 웹 시스템과 모바일 앱을 개발합니다.
+                    사용자 요청을 화면과 데이터 흐름으로 옮기고, 실제 운영에서 생기는 문제를 개선합니다.
                   </p>
                 </RevealOnScroll>
                 <RevealOnScroll delay={0.3}>
@@ -156,9 +200,9 @@ export default function Home() {
               <div className="grid grid-cols-3 gap-6 mt-16 pt-8 border-t border-[var(--border)]">
                 <div>
                   <p className="text-2xl md:text-3xl font-bold">
-                    <AnimatedCounter value="4+" />
+                    <span>Web · Mobile</span>
                   </p>
-                  <p className="text-sm text-[var(--muted)] mt-1">Years Experience</p>
+                  <p className="text-sm text-[var(--muted)] mt-1">Development</p>
                 </div>
                 <div>
                   <p className="text-2xl md:text-3xl font-bold">
@@ -189,25 +233,25 @@ export default function Home() {
               <RevealOnScroll delay={0.1}>
                 <div>
                   <p className="text-[var(--muted)] leading-relaxed">
-                    현재 인테리어 플랫폼 <strong className="text-[var(--foreground)]">바닥선생</strong>을 창업하여
-                    자사 홈페이지 개발과 AI 챗봇 상담, 자동 견적 시스템을 구현하고 있습니다.
+                    현재 <strong className="text-[var(--foreground)]">쉐라톤 완리 카지노 IT</strong>에서
+                    운영지원과 사내 업무 시스템 개발을 수행하며 개인 앱도 개발·운영하고 있습니다.
                   </p>
                   <p className="text-[var(--muted)] leading-relaxed mt-4">
-                    이전에는 <strong className="text-[var(--foreground)]">르호봇알브이엠</strong>에서 AI 전선 재활용 시스템을 개발했고,
-                    <strong className="text-[var(--foreground)]"> 인바디, 윈썸, 아자스쿨</strong> 등 다양한 기업의 웹/앱 서비스를 프리랜서로 구축했습니다.
+                    <strong className="text-[var(--foreground)]">르호봇알브이엠</strong>에서는 AI 폐전선 수거 자판기 웹 시스템을,
+                    <strong className="text-[var(--foreground)]"> 인바디</strong>에서는 ERP와 BWA ON iOS 앱을 개발했습니다.
                   </p>
                 </div>
               </RevealOnScroll>
               <RevealOnScroll delay={0.2}>
                 <div>
                   <p className="text-[var(--muted)] leading-relaxed">
-                    삼성 청년 SW 아카데미를 우수 성적으로 조기 수료했으며,
-                    필리핀/인도 교환학생과 현대자동차 인도법인 인턴 경험을 통해 글로벌 커뮤니케이션 역량을 갖추고 있습니다.
+                    삼성전자 주관 SSAFY에서 Python·JavaScript 웹 개발을 학습하고 우수 교육생으로 조기 수료했습니다.
+                    현대자동차 인도법인에서 구매 IT 시스템 개발 인턴을 경험했습니다.
                   </p>
                   <div className="mt-6 space-y-2">
                     <div className="flex items-center gap-3 text-sm">
                       <span className="text-[var(--muted)]">Location</span>
-                      <span>Korea</span>
+                      <span>Jeju, Korea</span>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <span className="text-[var(--muted)]">Education</span>
@@ -323,9 +367,9 @@ export default function Home() {
                     <p className="text-xs text-[var(--muted)] mt-1">2014년 3월 ~ 2020년 8월</p>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold">삼성 청년 SW 아카데미</h4>
-                    <p className="text-[var(--muted)] text-sm mt-1">우수성적자 조기 수료</p>
-                    <p className="text-xs text-[var(--muted)] mt-1">2021년</p>
+                    <h4 className="text-lg font-semibold">삼성전자 주관 SSAFY</h4>
+                    <p className="text-[var(--muted)] text-sm mt-1">Python·JavaScript 웹 개발 1,300시간 · 우수 교육생 조기 수료</p>
+                    <p className="text-xs text-[var(--muted)] mt-1">2021.01–10</p>
                   </div>
                 </div>
               </RevealOnScroll>
@@ -390,3 +434,4 @@ export default function Home() {
     </PageTransition>
   );
 }
+
