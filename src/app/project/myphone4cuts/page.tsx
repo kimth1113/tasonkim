@@ -299,7 +299,7 @@ export default function MyPhone4CutsPage() {
                 {[
                   { problem: "배경 제거 3초 × 4장 = 12초", solution: "서버 병렬 처리 (동시성 2)", result: "6초로 단축" },
                   { problem: "색상 변경마다 GPU 재호출", solution: "전경 PNG 캐싱 → CPU 합성", result: "3초 → 5ms" },
-                  { problem: "대용량 이미지 업로드", solution: "768px 리사이징 후 전송", result: "트래픽 70% 감소" },
+                  { problem: "대용량 이미지 업로드", solution: "768px 리사이징 후 전송", result: "전송 이미지 크기 제한" },
                   { problem: "Replicate 429 에러", solution: "지수 백오프 재시도 (12회)", result: "안정성 확보" },
                 ].map((item, i) => (
                   <StaggerItem key={i}>
@@ -335,7 +335,7 @@ export default function MyPhone4CutsPage() {
                   <div className="p-5 rounded-xl border border-[var(--border)] bg-[var(--card)]">
                     <h3 className="font-semibold mb-3">기술적 성과</h3>
                     <ul className="space-y-2 text-sm text-[var(--muted)]">
-                      <li>• AI API 비용 최적화 (캐싱으로 GPU 호출 80% 감소)</li>
+                      <li>• 중복 GPU 호출을 줄이기 위한 캐싱 적용</li>
                       <li>• 배치 처리 아키텍처 설계 및 구현</li>
                       <li>• 11개 언어 i18n 시스템 구축</li>
                     </ul>
